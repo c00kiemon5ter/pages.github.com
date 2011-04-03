@@ -24,11 +24,13 @@ Project Pages
 
 Let's say your GitHub username is "bob" and you have an existing repository named `fancypants`. If you create a new root branch named `gh-pages` in your repository, any content pushed there will be published to [http://bob.github.com/fancypants/](http://bob.github.com/fancypants/).
 
-In order to create a new root branch, first ensure that your working directory is clean by committing or stashing any changes. <span style="color: #a00;">The following operation will lose any uncommitted files!  You might want to run this in a fresh clone of your repo.</span>
+In order to create a new root branch, first ensure that your working directory is clean by committing or stashing any changes. 
+Then create a new branch named *gh-pages* which is independent and totally disconnected from all the other branches. 
+This branch will store all your files for your project's webpage. 
 
     $ cd /path/to/fancypants
-    $ git symbolic-ref HEAD refs/heads/gh-pages
-    $ rm .git/index
+    $ git checkout --orphan gh-pages
+    $ git rm -r --cached .
     $ git clean -fdx
 
 After running this you'll have an empty working directory (don't worry, your main repo is still on the `master` branch). Now you can create some content in this branch and push it to GitHub. For example:
