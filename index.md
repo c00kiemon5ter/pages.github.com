@@ -48,7 +48,17 @@ Real World Example: [github.com/defunkt/ambition@gh-pages](http://github.com/def
 
 If you don't want to go through the steps above to generate your branch, or you simply would like a generic page, you can use our page generator to create your gh-pages branch for you and fill it with a default page.
 
-![Page generator](page_generator.jpg)
+First navigate to your project and click the 'Admin' button on the top right
+
+> ![Admin button](admin_button.png)
+
+Then check the 'GitHub Pages' check box.
+
+> ![github pages checkbox](ghpages_checkbox.png)
+
+A pop-up will appear. Click on the 'Automatic GitHub Page Generator'
+
+> ![github pages popup generator](ghpages_popup.png)
 
 After your page is generated, you can check out the new branch:
 
